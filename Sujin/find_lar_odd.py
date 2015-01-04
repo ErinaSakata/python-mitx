@@ -1,10 +1,4 @@
-""" write a program that examines three variables-x,y, and z- and prints the largest odd number among them. /
-/*-- If none of them are ood, it should print a message to that effect """
-
-#
-#x = 2
-#y = 8
-#z = 3
+""" write a program that examines three variables-x,y, and z- and prints the largest odd number among them. If one of them are odd, it should print a message to that effect """
 
 x = int(raw_input("enter x : "))
 y = int(raw_input("enter y : "))
