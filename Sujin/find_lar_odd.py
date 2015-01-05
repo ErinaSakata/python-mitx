@@ -4,9 +4,8 @@ x = int(raw_input("enter x : "))
 y = int(raw_input("enter y : "))
 z = int(raw_input("enter z : "))
 
-""" answer should be y = 5 """
-
 print "Start"
+
 if (x % 2 == 1 and y % 2 == 1 and z % 2 == 1):
     if x < y < z : 
         print "z is the largest odd number. #1"
