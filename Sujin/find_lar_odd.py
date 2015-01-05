@@ -6,7 +6,14 @@ z = int(raw_input("enter z : "))
 
 print "Start"
 
-if (x % 2 == 1 and y % 2 == 1 and z % 2 == 1):
+# original
+# if (x % 2 == 1 and y % 2 == 1 and z % 2 == 1):
+
+x_is_odd = True if x % 2 == 1 else False
+y_is_odd = True if y % 2 == 1 else False
+z_is_odd = True if z % 2 == 1 else False
+
+if x_is_odd and y_is_odd and z_is_odd:
     if x < y < z : 
         print "z is the largest odd number. #1"
     elif z < x < y:
@@ -14,38 +21,35 @@ if (x % 2 == 1 and y % 2 == 1 and z % 2 == 1):
     else: 
         print "x is the largest odd number. #3"
 
-
-
-elif (x % 2 == 1) :
-    if (y % 2 == 1) and (z % 2 == 0):
+elif x_is_odd :
+    if y_is_odd and not z_is_odd:
         if x > y:
             print "x is the largest odd number. #4"
         else:
             print "y is the largest odd number. #5"
 
-    elif (z % 2 == 1) and (y % 2 == 0):
+    elif z_is_odd and not y_is_odd:
         if x < z :
             print "z is the largest number. #6"
         else:
             print "x is the largest number. #7"
-    elif (y % 2 == 0) and (y % 2 == 0):
+    elif not y_is_odd:
         print "x is the largest number. #8" 
 
-elif (x % 2 == 0):
-    if (y % 2 == 1) and (z % 2 == 1):
+elif not x_is_odd:
+    if (y_is_odd) and (z_is_odd):
         if y > z :
             print "y is the largest odd number. #9"
         else:
             print "z is the largest odd number. #10"
-    elif (y % 2 == 0):
-        if (z % 2 == 1):
+    elif not y_is_odd:
+        if z_is_odd:
             print "z is the largest number. #11" 
         else:
             print "there is no odd number"
     else:
         print "y is the largest number. #12"
     
-
 else:
     print "there is no odd number"
     
