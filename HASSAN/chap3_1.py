@@ -26,3 +26,4 @@ if __name__ == "__main__":
 	cube_root(5)
 	cube_root(9)
 	cube_root(27)
+	cube_root(7406961012236344616)
