@@ -7,6 +7,7 @@ print a message to that effect.
 Eliminated the trivial case where root = x and pwr = 1 always exists
 """
 
+
 def enter_input(x):
 
 	# x = int(input("Enter an integer : "))
