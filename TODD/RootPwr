@@ -1,0 +1,15 @@
+print "Hello, how are you today?"
+root = raw_input('Please enter an integer between 0 and 6:')
+if root <= 0:
+	print "I'm sorry, but you should have followed my directions."
+elif root >= 6:
+    print "I'm sorry, but you should have followed my directions."
+    
+pwr = raw_input('Now choose another number between 0 and 6!:')
+if pwr <= 0:
+	print "I'm sorry, but you should have followed my directions, jerk."
+elif pwr == 6:
+	print "I'm sorry, but you should have followed my directions, jerk."
+else:
+	print int(root)**int(pwr)
+	print "Congratulations! You know how to follow directions!"
