@@ -1,5 +1,5 @@
- # get all strings into list
-s = 'abcbcd'
+# get all strings into list
+s = 'azcbobobegghakl'
 result = []
 
 for i in range(len(s)+1):
@@ -11,3 +11,4 @@ for i in range(len(s)+1):
 #print result
 print result
 print "Number of the list :", len(result)
+
