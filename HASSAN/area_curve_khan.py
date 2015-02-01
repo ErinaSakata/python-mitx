@@ -14,7 +14,7 @@ def area_curve(start, step, stop):
 	while start < stop:
 		totalarea = totalarea + f(start)*step
 
-		# print "totalrea : ",totalarea, " for x = ", start
+		# print "totalarea : ",totalarea, " for x = ", start
 		start += step	
 	return totalarea
 
