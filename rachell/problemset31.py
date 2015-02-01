@@ -9,9 +9,9 @@ def radiation(start,stop,step):
     totalexp = stop1 - start1 # gets the diff (total time exposed)
     numofrects = [] #makes an empty list to count how many 'rects'
      # to be able to append a list
-    while stop1 >= start1: #making a list
-        start1 += step1
+    while stop1 > start1: #making a list
         numofrects.append(start1)
+        start1 += step1
         
         
     totalarea = 0  #declare total area
