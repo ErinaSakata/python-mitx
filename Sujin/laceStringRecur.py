@@ -18,4 +18,3 @@ def laceStringsRecur(s1, s2):
 
 print laceStringsRecur('ulvarnoq', 'ogqwha')
 #uolgvqawrhnaoq
-#uolgvqawrhna
